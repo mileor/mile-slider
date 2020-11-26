@@ -1,0 +1,53 @@
+.mile-slider {
+  position: relative;
+}
+
+.mile-slider__content {
+  overflow: hidden;
+}
+
+.mile-slider__content > div {
+  display: grid;
+  width: 24000px;
+}
+
+.mile-slider__content > div > div{
+  transition: all .4s ease-in;
+  border-radius: 1px;
+}
+
+.mile-slider__content > div > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mile-slider__nav-button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: calc(50% - 12px);
+  font-size: 28px;
+  background: #6554C0;
+  border: none;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  line-height: 28px;
+  z-index: 100;
+  outline: none;
+}
+
+.mile-slider__nav-button:hover {
+  cursor: pointer;
+}
+
+.mile-slider__nav-button--left {
+  left: 1%;
+}
+
+.mile-slider__nav-button--right {
+  right: 1%;
+}

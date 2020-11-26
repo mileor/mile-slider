@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mile slider</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/mile-slider.css">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 400;
+      color: #172B4D;
+      background: #FAFBFC;
+      padding-bottom: 100px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 60px;
+      font-weight: 400;
+    }
+    h2 {
+      margin-top: 100px;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 60px;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .logo {
+      text-align: center;
+      color: #6554C0;
+      font-weight: 900;
+      font-size: 40px;
+    }
+    .github-button {
+      width: 328px;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      background: #36B37E;
+      color: #FFFFFF;
+      border-radius: 4px;
+      height: 60px;
+      line-height: 60px;
+      text-decoration: none;
+      transition: all .4s ease-in;
+      position: relative;
+      padding-left: 28px;
+    }
+    .github-button img {
+      width: 32px;
+      height: 32px;
+      filter: invert(124%) brightness(172%);
+      position: absolute;
+      left: 60px;
+      top: 12px;
+    }
+    .github-button:hover {
+      background: #006644;
+    }
+    .code-wrapper {
+      width: 100%;
+      overflow: scroll;
+      background: #DFE1E6;
+      border-radius: 4px;
+      border: 1px solid #B3BAC5;
+      padding: 16px;
+      padding-right: 44px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="logo">Mile-slider</p>
+    <h1>Simple, customizable, responsive carousel on vanilla JS</h1>
+    <a class="github-button" href="/">
+      <img src="./github-icon.svg" alt="github-icon">
+      View on Github
+    </a>
+    <h2>Example</h2>
+    <div class="mile-slider" id="slider1">
+      <button class="mile-slider__nav-button mile-slider__nav-button--left">←</button>
+      <button class="mile-slider__nav-button mile-slider__nav-button--right">→</button>
+      <div class="mile-slider__content">
+        <div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1459716854666-062eac2da3bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI5MzI0fQ&auto=format&fit=crop&w=889&q=80" alt="">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1437322213019-20ad95053704?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1461703048574-9a342517f1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=889&q=80" alt="">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1441239372925-ac0b51c4c250?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1455487276747-341d543aa498?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80" alt="">
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>HTML:</h3>
+    <p>
+      Fully customizable layout. You can use any layout for nav-buttons and any content for slides.
+    </p>
+    <pre class="code-wrapper">
+      <code>
+        &lt;div class="mile-slider" id="slider1"&gt;
+          &lt;button class="mile-slider__nav-button mile-slider__nav-button--left"&gt;←&lt;/button&gt;
+          &lt;button class="mile-slider__nav-button mile-slider__nav-button--right">→&lt;/button&gt;
+          &lt;div class="mile-slider__content"&gt;
+            &lt;div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1459716854666-062eac2da3bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI5MzI0fQ&auto=format&fit=crop&w=889&q=80" alt=""&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1437322213019-20ad95053704?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt=""&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1461703048574-9a342517f1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=889&q=80" alt=""&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1441239372925-ac0b51c4c250?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt=""&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1455487276747-341d543aa498?ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80" alt=""&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;img src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt=""&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+    <h3>JS:</h3>
+    <pre class="code-wrapper">
+      <code>
+        mileSlider({
+          container: 'slider1',
+          animationDuration: 600,
+          animationType: 'linear',
+          height: 332,
+          slidesToShow: 3,
+          gap: 24,
+          activeSlideStyles: {
+            backgroundColor: '#6554C0',
+            padding: '16px',
+          }
+        });
+      </code>
+    </pre>
+    <h2>Get a free carousel</h2>
+    <a class="github-button" href="/">
+      <img src="./github-icon.svg" alt="github-icon">
+      Github repository
+    </a>
+  </div>
+  <script src="./src/mile-slider.js"></script>
+</body>
+</html>
