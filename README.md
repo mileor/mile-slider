@@ -11,7 +11,7 @@ Simple, customizable, responsive carousel on vanilla JS.
 
 1. Add a link to the css file:
 ```
-<link rel="stylesheet" href="https://unpkg.com/mile-slider@0.0.1/src/mile-slider.css">
+<link rel="stylesheet" href="https://unpkg.com/mile-slider@0.0.3/src/mile-slider.css">
 ```
 
 
@@ -53,7 +53,7 @@ import { mileSlider } from "./node_modules/mile-slider/src/mile-slider.js";
 ```
 or
 ```
-import { mileSlider } from "https://unpkg.com/mile-slider@0.0.1/src/mile-slider.js";
+import { mileSlider } from "https://unpkg.com/mile-slider@0.0.3/src/mile-slider.js";
 ```
 
 3. Call `mileSlider()`:
