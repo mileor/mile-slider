@@ -9,7 +9,13 @@ Simple, customizable, responsive carousel on vanilla JS.
 
 ### Usage
 
-1. Add HTML markup:
+1. Add a link to the css file:
+```
+<link rel="stylesheet" href="https://unpkg.com/mile-slider@0.0.1/src/mile-slider.css">
+```
+
+
+2. Add HTML markup:
 ```
 <div class="mile-slider" id="slider1">
   <button class="mile-slider__nav-button mile-slider__nav-button--left">←</button>
@@ -41,10 +47,17 @@ Simple, customizable, responsive carousel on vanilla JS.
   </div>
 </div>
 ```
-2. Initialize slider in .js file and call mileSlider()
+3. Initialize slider in .js file:
 ```
-import { mileSlider } from "./node_modules/mile-slider/src/mile-slider";
+import { mileSlider } from "./node_modules/mile-slider/src/mile-slider.js";
+```
+or
+```
+import { mileSlider } from "https://unpkg.com/mile-slider@0.0.1/src/mile-slider.js";
+```
 
+3. Call `mileSlider()`:
+```
 mileSlider({
   container: 'slider1',
   animationDuration: 600,
@@ -58,6 +71,7 @@ mileSlider({
   }
 });
 ```
+
 ### Options
 
 | Option              | Type                                         | Description                 |

@@ -155,7 +155,7 @@ function renderMileSlider({
   }, animationDuration)
 }
 
-function mileSlider({
+export function mileSlider({
   container,
   animationDuration = 600,
   animationType = 'linear',
@@ -188,16 +188,3 @@ function mileSlider({
     });
   })
 }
-
-mileSlider({
-  container: 'slider1',
-  animationDuration: 600,
-  animationType: 'linear',
-  height: 332,
-  slidesToShow: 3,
-  gap: 24,
-  activeSlideStyles: {
-    backgroundColor: '#6554C0',
-    padding: '16px',
-  }
-});

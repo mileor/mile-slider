@@ -112,6 +112,12 @@
         </div>
       </div>
     </div>
+    <h3>Add a link to the css file:</h3>
+    <pre class="code-wrapper">
+      <code>
+        &lt;link rel="stylesheet" href="https://unpkg.com/mile-slider@0.0.1/src/mile-slider.css"&gt;
+      </code>
+    </pre>
     <h3>HTML:</h3>
     <p>
       Fully customizable layout. You can use any layout for nav-buttons and any content for slides.
@@ -152,6 +158,10 @@
     <h3>JS:</h3>
     <pre class="code-wrapper">
       <code>
+        import { mileSlider } from "https://unpkg.com/mile-slider@0.0.1/src/mile-slider.js";
+        // or
+        import { mileSlider } from "./node_modules/mile-slider/src/mile-slider.js";
+
         mileSlider({
           container: 'slider1',
           animationDuration: 600,
@@ -172,6 +182,20 @@
       Github repository
     </a>
   </div>
-  <script src="./src/mile-slider.js"></script>
+  <script type="module">
+    import { mileSlider } from "./src/mile-slider.js";
+    mileSlider({
+      container: 'slider1',
+      animationDuration: 600,
+      animationType: 'linear',
+      height: 332,
+      slidesToShow: 3,
+      gap: 24,
+      activeSlideStyles: {
+        backgroundColor: '#6554C0',
+        padding: '16px',
+      }
+    });
+  </script>
 </body>
 </html>
