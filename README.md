@@ -1,7 +1,7 @@
 # Mile slider
 
 Simple, customizable, responsive carousel on vanilla JS. 
-[Demo](https://github.com/mileor/mile-slider)
+[Demo](https://mileor.github.io/mile-slider/)
 
 ### Install
 
